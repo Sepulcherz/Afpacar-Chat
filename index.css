@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+a{
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+header{
+    font-weight: bold;
+    text-align: center;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.hr-large--grey{
+    margin-left: -0.5em;
+    width: 105%;
+    height: 5px;
+    background-color: rgb(175, 175, 175);
+}
+
+.hr-large{
+    margin-left: -0.5em;
+    width: 105%;
+}
+
+.messenger{
+    display: flex;
+    flex-direction: column;
+}
+
+.messenger__contact{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+@media screen and (min-width:700px){
+    .messenger__contact{
+        margin-bottom: 1%;
+    }
+}
+
+.messenger__contact--list{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.messenger__contact--return{
+    margin-right: 15px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+@media screen and (min-width:700px){
+    .messenger__contact--return{
+    margin-bottom:0.2%
+    }
+}
+
+.messenger__contact--name > h2{
+    font-size: 15px;
+}
+
+.messenger__contact--status{
+    margin-left: auto;
+    color: #44a33d;
+    margin-right: 1%;
+}
+
+.messenger__text-area{
+    word-break: break-word;
+    min-height: 300px;
+    height: 100%;
+    flex:1;  
+    overflow-y:scroll;
+}
+
+@media screen and (min-height:300px){
+    .messenger__text-area{
+        min-height: 100px; 
+        max-height: 100px; 
+    }
+}
+
+@media screen and (min-height:600px){
+    .messenger__text-area{
+        min-height: 450px; 
+        max-height: 450px;
+    }
+}
+
+@media screen and (min-height:800px){
+    .messenger__text-area{
+        min-height: 500px; 
+        max-height: 500px; 
+    }
+}
+
+@media screen and (min-height:1000px){
+    .messenger__text-area{
+        min-height: 700px; 
+        max-height: 700px; 
+    }
+}
+
+@media screen and (min-height:1300px){
+    .messenger__text-area{
+        min-height: 900px; 
+        max-height: 900px; 
+    }
+}
+
+.messenger__input{
+    margin-top: 1.5%;
+    align-items: center;
+    border-style: none;
+    margin-bottom: 2.5%;
+    font-weight: bold;
+}
+
+.message__sent{
+    background-color: #44a33d;
+    display: flex;
+    margin-left: auto;
+    margin-right: 5%;
+    border-radius: 20px;
+    width: max-content;
+    padding: 1%;
+    margin-bottom: 0.5%;
+    color: white;
+    font-weight: 600;
+
+}
+
+.messenger__input:focus{
+    outline: none;
+}
+
+footer{
+    font-weight: bold;
+    text-align: center;
+}
